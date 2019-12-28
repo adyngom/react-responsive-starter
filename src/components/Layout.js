@@ -3,8 +3,7 @@ import { useBreakpoint } from "../Breakpoint/BreakpointState";
 
 const Layout = ({ children }) => {
   const breakpoints = useBreakpoint();
-  console.log(breakpoints);
-  return <div>{children}</div>;
+  return <div className={`wrapper ${breakpoints}`}>{children}</div>;
 };
 
 export default Layout;

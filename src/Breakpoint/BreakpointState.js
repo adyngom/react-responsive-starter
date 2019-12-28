@@ -61,7 +61,8 @@ const useBreakpoint = () => {
   if (context === {}) {
     throw new Error("useBreakpoint must be used within BreakpointState");
   }
-  return context;
+  const bpClasses = Object.keys(context).filter(key => !!context[key]);
+  return bpClasses.join(" ");
 };
 
 export { useBreakpoint, BreakpointState };

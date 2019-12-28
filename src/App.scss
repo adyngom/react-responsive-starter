@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: transparent;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,5 +34,24 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.wrapper {
+  background-color: rgb(56, 17, 17);
+  &.for-phone-only {
+    background-color: rgb(94, 94, 185);
+  }
+  &.for-tablet-portrait-up {
+    background-color: #333;
+  }
+  &.for-tablet-landscape-up {
+    background-color: rgb(243, 40, 74);
+  }
+  &.for-desktop-up {
+    background-color: rgb(243, 199, 40);
+  }
+  &.for-big-desktop-up {
+    background-color: rgb(243, 74, 40);
   }
 }

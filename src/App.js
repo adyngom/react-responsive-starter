@@ -1,13 +1,16 @@
 import React, { Fragment } from "react";
 import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 import { BreakpointState } from "./Breakpoint/BreakpointState";
 import Layout from "./components/Layout";
 const queries = {
-  xs: "(max-width: 320px)",
-  sm: "(max-width: 720px)",
-  md: "(max-width: 1024px)",
-  or: "(orientation: portrait)" // we can check orientation also
+  "for-phone-only": "(max-width: 559px)",
+  "for-tablet-portrait-up": "(min-width: 600px)",
+  "for-tablet-landscape-up": "(min-width: 900px)",
+  "for-desktop-up": "(min-width: 1200px)",
+  "for-big-desktop-up": "(min-width: 1800px)",
+  portrait: "(orientation: portrait)",
+  landscape: "(orientation: landscape)"
 };
 
 function App() {
