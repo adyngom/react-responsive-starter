@@ -1,57 +1,69 @@
-.App {
-  text-align: center;
+@import "./scss/normalize.scss";
+body {
+  background: transparent;
+  font-size: calc(1vw + 1vh + 0.5vmin);
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.75;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.55);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  font-family: "Fjalla One", sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header h1 {
+  text-transform: uppercase;
+  margin: 0;
 }
-
-.App-header {
-  background-color: transparent;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header h1 + h2 {
+  font-weight: 100;
+  margin: 0;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .wrapper {
   background-color: rgb(56, 17, 17);
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 5vh 5vw;
+  box-sizing: border-box;
+  position: relative;
+
+  .meta {
+    position: absolute;
+    top: 1em;
+    text-align: center;
+    width: 100%;
+    font-size: 0.5em;
+  }
   &.for-phone-only {
-    background-color: rgb(94, 94, 185);
+    background-color: #333;
   }
   &.for-tablet-portrait-up {
-    background-color: #333;
+    background-color: rgb(94, 94, 185);
   }
   &.for-tablet-landscape-up {
     background-color: rgb(243, 40, 74);
   }
   &.for-desktop-up {
-    background-color: rgb(243, 199, 40);
+    height: 100vh;
+    overflow: hidden;
+    overflow-x: scroll;
+    background-color: rgb(11, 161, 236);
+    columns: 3 auto;
+    header h1 {
+      text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+        0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+        0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+        0 20px 20px rgba(0, 0, 0, 0.15);
+    }
   }
   &.for-big-desktop-up {
     background-color: rgb(243, 74, 40);
+    header h1 {
+      text-shadow: -10px 10px 0px #eaeeee, -20px 20px 0px #d2d6d6,
+        -30px 30px 0px #787a7a;
+    }
   }
 }
