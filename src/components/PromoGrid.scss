@@ -1,16 +1,12 @@
-body,
-.wrapper {
-  background-color: #fff !important;
-}
 .promo-grid {
   display: grid;
   max-width: 1170px;
-  margin: 0 auto;
+  padding: 10px;
   height: auto;
   grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: minmax(190px, 1fr);
   gap: 10px;
-  & > figure {
+  & > article {
     margin: 0;
     padding: 0;
     background-color: #86e6f2;
@@ -47,6 +43,8 @@ body,
 }
 
 .for-tablet-landscape-up {
+  margin: 0px auto;
+  background-color: rgb(23, 22, 22);
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 190px);
   .fig-1 {

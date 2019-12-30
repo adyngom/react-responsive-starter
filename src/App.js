@@ -19,9 +19,7 @@ function App() {
   return (
     <Fragment>
       <BreakpointState queries={queries}>
-        <Layout>
-          <PromoGrid></PromoGrid>
-        </Layout>
+        <PromoGrid></PromoGrid>
       </BreakpointState>
     </Fragment>
   );
