@@ -3,6 +3,7 @@ import "./App.scss";
 import { BreakpointState } from "./Breakpoint/BreakpointState";
 import Layout from "./components/Layout";
 import Lipsum from "./components/Lipsum";
+import PromoGrid from "./components/PromoGrid";
 
 const queries = {
   "for-phone-only": "(max-width: 559px)",
@@ -18,8 +19,8 @@ function App() {
   return (
     <Fragment>
       <BreakpointState queries={queries}>
-        <Layout showBreakpoints>
-          <Lipsum></Lipsum>
+        <Layout>
+          <PromoGrid></PromoGrid>
         </Layout>
       </BreakpointState>
     </Fragment>
