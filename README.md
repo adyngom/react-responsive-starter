@@ -129,6 +129,8 @@ function App() {
 }
 ```
 
+## Layout as a wrapper
+
 With this initial setup, you can now have access to your **`queries matches`** inside any component using the context API with the convenient custom hook **`useBreakpoint`**.
 Let's look at an example where the **`Layout`** component is used a wrapper that provide global styles to the rest of the application.
 
@@ -256,9 +258,44 @@ function App() {
 }
 ```
 
-The second example uses the **`[PromoGrid](/src/components/PromoGrid.js)`** component
-
 <blockquote class="imgur-embed-pub" lang="en" data-id="ekyqJIc"><a href="//imgur.com/ekyqJIc">Cosmos awaits responsive example</a></blockquote>
+
+## Responsive Grid
+
+The second example uses the [PromoGrid](/src/components/PromoGrid.js) component but we have attached a specific SCSS file to it [PromoGrid.scss](/src/components/PromoGrid.scss)
+
+```javascript
+import React, { Fragment, useState } from "react";
+import { useBreakpoint } from "../Breakpoint/BreakpointState";
+import "./PromoGrid.scss";
+
+const PromoGrid = () => {
+  const breakpoints = useBreakpoint();
+  const initialState = [
+    // images object here
+  ];
+
+  const [gridImages, setGridImages] = useState(initialState);
+  return (
+    <Fragment>
+      <div className={`promo-grid ${breakpoints}`}>
+        {gridImages.map(Image => (
+          <article
+            key={Image.position}
+            className={`fig-${Image.position}`}
+            style={{
+              background: `url(${Image.url})`,
+              backgroundSize: "cover"
+            }}
+          ></article>
+        ))}
+      </div>
+    </Fragment>
+  );
+};
+
+export default PromoGrid;
+```
 
 <!-- ROADMAP -->
 
