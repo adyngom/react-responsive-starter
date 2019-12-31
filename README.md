@@ -134,7 +134,7 @@ function App() {
 With this initial setup, you can now have access to your **`queries matches`** inside any component using the context API with the convenient custom hook **`useBreakpoint`**.
 Let's look at an example where the **`Layout`** component is used a wrapper that provide global styles to the rest of the application.
 
-```javascript class:"lineNo"
+```javascript
 /** Layout.js **/
 import React from "react";
 import { useBreakpoint } from "../Breakpoint/BreakpointState";
@@ -157,6 +157,11 @@ const Layout = ({ children, showBreakpoints }) => {
 
 export default Layout;
 ```
+
+The two important lines are
+**`const breakpoints = useBreakpoint();`** which gives a space separated set of your queries matches
+
+**`<div className={`wrapper \${breakpoints}`}>`** where you attach those class names to your wrapper div.
 
 <!-- ROADMAP -->
 
