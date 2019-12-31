@@ -258,7 +258,7 @@ function App() {
 }
 ```
 
-![responsive cosmos](https://imgur.com/ekyqJIc.gif)
+<blockquote class="imgur-embed-pub" lang="en" data-id="ekyqJIc"><a href="//imgur.com/ekyqJIc">cosmos awaits responsive example</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 <!-- ROADMAP -->
 
