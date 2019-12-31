@@ -341,6 +341,8 @@ and we define our first layout changes in our tablet display for example:
 }
 ```
 
+![Click on this link to see the effect](https://res.cloudinary.com/adyngomcom/image/upload/v1577829678/react-responsive-grid_yilkiz.gif)
+
 <!-- ROADMAP -->
 
 ## Roadmap
