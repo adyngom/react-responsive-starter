@@ -41,7 +41,7 @@
     <a href="https://github.com/adyngom/react-responsive-starter"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/adyngom/react-responsive-starter">View Demo</a>
+    <a href="https://react-responsive-starter.netlify.com">View Demo</a>
     ·
     <a href="https://github.com/adyngom/react-responsive-starter/issues">Bugs</a>
     ·
@@ -56,8 +56,6 @@
 - [About the Project](#about-the-project)
   - [Built With](#built-with)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
 - [Usage](#usage)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
@@ -90,7 +88,7 @@ git clone https://github.com/adyngom/react-responsive-starter.git
 2. Install NPM packages
 
 ```sh
-npm install
+npm install && npm start
 ```
 
 ## Usage
@@ -257,6 +255,8 @@ function App() {
   );
 }
 ```
+
+The second example uses the **`[PromoGrid](/src/components/PromoGrid.js)`** component
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="ekyqJIc"><a href="//imgur.com/ekyqJIc">Cosmos awaits responsive example</a></blockquote>
 
