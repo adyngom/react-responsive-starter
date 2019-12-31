@@ -36,7 +36,7 @@
   <h3 align="center">React Responsive Application Starter</h3>
 
   <p align="center">
-    Easily set and capture the breakpoints that will work for your design. Listen reactively to the changes in screen size and orientation to quickly adapt your layout.
+    Easily set and capture the breakpoints that will work for your design. 
     <br />
     <a href="https://github.com/adyngom/react-responsive-starter"><strong>Explore the docs »</strong></a>
     <br />
