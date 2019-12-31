@@ -71,7 +71,7 @@
 
 ![React responsive starter grid example](https://i.imgur.com/IKL4Vu0.jpg)
 
-Using the **Window.MatchMedia** method, the `BreakPointState` module can listen to screen and orientation changes passed in as props via a `queries` object. You will then have access to a custom `useBreakpoint` hook which is an explicit way of taking advantage of the context API anywhere down the component tree.
+Using the **Window.MatchMedia** method, the **`BreakPointState`** module can listen to screen and orientation changes passed in as props via a **`queries`** object. You will then have access to a custom **`useBreakpoint`** hook which is an explicit way of taking advantage of the context API anywhere down the component tree.
 
 ### Built With
 
@@ -93,11 +93,43 @@ git clone https://github.com/adyngom/react-responsive-starter.git
 npm install
 ```
 
-<!-- USAGE EXAMPLES -->
-
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+In your **`App.js`** file this would be your basic imports:
+
+```javascript
+import React, { Fragment } from "react";
+import { BreakpointState } from "./Breakpoint/BreakpointState";
+import "./App.scss";
+```
+
+then you would specify a `queries` object with the different screen and orientation you may want to match:
+
+```javascript
+const queries = {
+  "for-phone-only": "(max-width: 559px)",
+  "for-tablet-portrait-up": "(min-width: 600px)",
+  "for-tablet-landscape-up": "(min-width: 900px)",
+  "for-desktop-up": "(min-width: 1200px)",
+  "for-big-desktop-up": "(min-width: 1800px)",
+  portrait: "(orientation: portrait)",
+  landscape: "(orientation: landscape)"
+};
+```
+
+now you can use the **`BreakpointState`** as a wrapper around your app tree:
+
+```javascript
+function App() {
+  return (
+    <Fragment>
+      <BreakpointState queries={queries}>
+        {/* Your App Components tree here */}
+      </BreakpointState>
+    </Fragment>
+  );
+}
+```
 
 <!-- ROADMAP -->
 

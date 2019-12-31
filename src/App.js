@@ -1,9 +1,6 @@
 import React, { Fragment } from "react";
-import "./App.scss";
 import { BreakpointState } from "./Breakpoint/BreakpointState";
-import Layout from "./components/Layout";
-import Lipsum from "./components/Lipsum";
-import PromoGrid from "./components/PromoGrid";
+import "./App.scss";
 
 const queries = {
   "for-phone-only": "(max-width: 559px)",
@@ -19,7 +16,7 @@ function App() {
   return (
     <Fragment>
       <BreakpointState queries={queries}>
-        <PromoGrid></PromoGrid>
+        {/* Your App Components tree here */}
       </BreakpointState>
     </Fragment>
   );
