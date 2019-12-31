@@ -341,7 +341,21 @@ and we define our first layout changes in our tablet display for example:
 }
 ```
 
-![Click on this link to see the effect](https://res.cloudinary.com/adyngomcom/image/upload/v1577829678/react-responsive-grid_yilkiz.gif)
+Now in **`App.js`** after importing the `PromoGrid` we can try:
+
+```javascript
+function App() {
+  return (
+    <Fragment>
+      <BreakpointState queries={queries}>
+        <PromoGrid></PromoGrid>
+      </BreakpointState>
+    </Fragment>
+  );
+}
+```
+
+**[Click on this link to see the effect](https://res.cloudinary.com/adyngomcom/image/upload/v1577829678/react-responsive-grid_yilkiz.gif)**
 
 <!-- ROADMAP -->
 
