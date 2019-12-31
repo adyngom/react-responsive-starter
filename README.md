@@ -265,6 +265,7 @@ function App() {
 The second example uses the [PromoGrid](/src/components/PromoGrid.js) component but we have attached a specific SCSS file to it [PromoGrid.scss](/src/components/PromoGrid.scss)
 
 ```javascript
+/** PromoGrid.js **/
 import React, { Fragment, useState } from "react";
 import { useBreakpoint } from "../Breakpoint/BreakpointState";
 import "./PromoGrid.scss";
@@ -295,6 +296,49 @@ const PromoGrid = () => {
 };
 
 export default PromoGrid;
+```
+
+The setup to get the breakpoints is similar to what we have done with `Layout.js` earlier and essentially allow us to get the responsive classes added on this line
+
+**`<div className={`promo-grid \${breakpoints}`}>`**
+
+Now the CSS to make the grid responsive is a little bit more involved, but essentially following a **mobile-first** approach, start with the generic rules as default styles:
+
+```scss
+.promo-grid {
+  display: grid;
+  max-width: 1170px;
+  padding: 10px;
+  height: auto;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(190px, 1fr);
+  gap: 10px;
+  // ... rest of rules
+}
+```
+
+and we define our first layout changes in our tablet display for example:
+
+```scss
+.for-tablet-portrait-up {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(7, 238px);
+  .fig-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .fig-4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+  }
+  .fig-5 {
+    grid-row: 3 / 5;
+  }
+  .fig-8 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 7;
+  }
+}
 ```
 
 <!-- ROADMAP -->
