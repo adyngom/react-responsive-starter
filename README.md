@@ -69,7 +69,7 @@
 
 ## About The Project
 
-![React responsive starter grid example](https://i.imgur.com/IKL4Vu0.jpg)
+![React responsive starter grid example](https://i.imgur.com/bs1fsVy.jpg)
 
 Using the **Window.MatchMedia** method, the **`BreakPointState`** module can listen to screen and orientation changes passed in as props via a **`queries`** object. You will then have access to a custom **`useBreakpoint`** hook which is an explicit way of taking advantage of the context API anywhere down the component tree.
 
@@ -258,7 +258,7 @@ function App() {
 }
 ```
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="ekyqJIc"><a href="//imgur.com/ekyqJIc">cosmos awaits responsive example</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<blockquote class="imgur-embed-pub" lang="en" data-id="ekyqJIc"><a href="//imgur.com/ekyqJIc">Cosmos awaits responsive example</a></blockquote>
 
 <!-- ROADMAP -->
 
