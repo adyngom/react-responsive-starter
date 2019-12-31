@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { BreakpointState } from "./Breakpoint/BreakpointState";
 import Layout from "./components/Layout";
+import Lipsum from "./components/Lipsum";
 import "./App.scss";
 
 const queries = {
@@ -17,7 +18,9 @@ function App() {
   return (
     <Fragment>
       <BreakpointState queries={queries}>
-        <Layout showBreakpoints></Layout>
+        <Layout>
+          <Lipsum></Lipsum>
+        </Layout>
       </BreakpointState>
     </Fragment>
   );

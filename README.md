@@ -185,6 +185,81 @@ you can see this behavior if you run your project and check the console.
 
 ![Breakpoints reactive updates](https://i.imgur.com/67CWQl6.gif)
 
+**The **`showBreakpoints`** is simply added for debugging and should not be part of your production code.**
+
+Now that you have access to those dynamic classes, you can either target them directly in your global styles within **`App.scss`** or you could put them within a component specific stylesheet. For this demo, we put them in the **`App.scss`**.
+
+**DUE TO THE NATURE OF CASCADING STYLES, THE ORDER OF THE CLASSES MATTERS SINCE ONE RESOLUTION MIGHT MATCH MULTIPLE CONDITIONS. STACK YOUR CLASSES FROM LOWEST BREAKPOINT TO HIGHEST**
+
+```scss
+.wrapper {
+  background-color: rgb(56, 17, 17);
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 5vh 5vw;
+  box-sizing: border-box;
+  position: relative;
+
+  .meta {
+    position: absolute;
+    top: 1em;
+    text-align: center;
+    width: 100%;
+    font-size: 0.5em;
+  }
+  &.for-phone-only {
+    background-color: #333;
+  }
+  &.for-tablet-portrait-up {
+    background-color: rgb(94, 94, 185);
+  }
+  &.for-tablet-landscape-up {
+    background-color: rgb(243, 40, 74);
+  }
+  &.for-desktop-up {
+    min-height: 100vh;
+    overflow: hidden;
+    overflow-x: scroll;
+    background-color: rgb(11, 161, 236);
+    columns: 3 auto;
+    header h1 {
+      text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+        0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0
+          1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px
+          rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+    }
+  }
+  &.for-big-desktop-up {
+    background-color: rgb(243, 74, 40);
+    header h1 {
+      text-shadow: -10px 10px 0px #eaeeee, -20px 20px 0px #d2d6d6,
+        -30px 30px 0px #787a7a;
+    }
+  }
+}
+```
+
+We are having a bit of fun with some of the styles above, but essentially changing the background color of the **`wrapper container`** and using a column layout for big screens.
+
+Let's add the **`Lipsum`** component to the mix to show how the content changes as we switch screen size.
+
+```javascript
+function App() {
+  return (
+    <Fragment>
+      <BreakpointState queries={queries}>
+        <Layout>
+          <Lipsum></Lipsum>
+        </Layout>
+      </BreakpointState>
+    </Fragment>
+  );
+}
+```
+
+![responsive cosmos](https://i.imgur.com/67CWQl6.gif)
+
 <!-- ROADMAP -->
 
 ## Roadmap
