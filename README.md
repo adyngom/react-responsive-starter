@@ -71,9 +71,7 @@
 
 ![React responsive starter grid example](https://i.imgur.com/IKL4Vu0.jpg)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`adyngom`, `react-responsive-starter`, `adyngom`, `email`
+Using the **Window.MatchMedia** method, the `BreakPointState` module can listen to screen and orientation changes passed in as props via a `queries` object. You will then have access to a custom `useBreakpoint` hook which is an explicit way of taking advantage of the context API anywhere down the component tree.
 
 ### Built With
 
@@ -82,20 +80,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <!-- GETTING STARTED -->
 
 ## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
-
-```sh
-npm install npm@latest -g
-```
-
-### Installation
 
 1. Clone the react-responsive-starter
 
@@ -169,5 +153,5 @@ Project Link: [https://github.com/adyngom/react-responsive-starter](https://gith
 [license-shield]: https://img.shields.io/github/license/adyngom/react-responsive-starter.svg?style=flat-square
 [license-url]: https://github.com/adyngom/react-responsive-starter/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://linkedin.com/in/adyngom
 [product-screenshot]: images/screenshot.png

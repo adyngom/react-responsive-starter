@@ -81,7 +81,7 @@ const PromoGrid = () => {
             key={Image.position}
             className={`fig-${Image.position}`}
             style={{
-              background: `url(${Image.url}) center center`,
+              background: `url(${Image.url})`,
               backgroundSize: "cover"
             }}
           ></article>
