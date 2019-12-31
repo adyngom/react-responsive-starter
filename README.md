@@ -30,7 +30,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/adyngom/react-responsive-starter">
-    <img src="https://imgur.com/qI1Ay0n" alt="react responsive starter example">
+    <img src="https://i.imgur.com/qI1Ay0n.png" alt="react responsive starter example">
   </a>
 
   <h3 align="center">React Responsive Application Starter</h3>
