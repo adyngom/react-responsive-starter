@@ -258,7 +258,7 @@ function App() {
 }
 ```
 
-![responsive cosmos](https://i.imgur.com/ekyqJIc.gif)
+![responsive cosmos](https://i.imgur.com/ekyqJIc.gifv)
 
 <!-- ROADMAP -->
 
