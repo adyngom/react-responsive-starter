@@ -357,7 +357,9 @@ function App() {
 
 **[Click on this link to see the effect](https://res.cloudinary.com/adyngomcom/image/upload/v1577829678/react-responsive-grid_yilkiz.gif)**
 
-<!-- ROADMAP -->
+### That's all folks :)
+
+Please add any suggestions or better yet refine it by contributing to the project. Hope you find it useful.
 
 ## Roadmap
 
@@ -393,9 +395,10 @@ Project Link: [https://github.com/adyngom/react-responsive-starter](https://gith
 
 ## Acknowledgements
 
-- []()
-- []()
-- []()
+- Super thanks to **[@Udit Tyagi](https://twitter.com/tyagiUdit94)** with this **[article](https://medium.com/better-programming/how-to-use-media-queries-programmatically-in-react-4d6562c3bc97)** that inspired everything
+- A must read article by **David Gilbertson** - **[The 100% correct way to do CSS breakpoints](https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/)** that impacted the default set of breakpoints names in the examples. You can of course name them whatever you see fit but read his article first.
+- Thanks to **Design Shack** for this very entertaining piece **[12 Fun CSS Text Shadows You Can Copy and Paste](https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/)**
+- Last but not least **[Sagan Ipsum](http://saganipsum.com/)** for a different take on sample text.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
