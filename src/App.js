@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { BreakpointState } from "./Breakpoint/BreakpointState";
+import Layout from "./components/Layout";
 import "./App.scss";
 
 const queries = {
@@ -16,7 +17,7 @@ function App() {
   return (
     <Fragment>
       <BreakpointState queries={queries}>
-        {/* Your App Components tree here */}
+        <Layout showBreakpoints></Layout>
       </BreakpointState>
     </Fragment>
   );

@@ -158,10 +158,32 @@ const Layout = ({ children, showBreakpoints }) => {
 export default Layout;
 ```
 
-The two important lines are
+The two important lines are:
+
 **`const breakpoints = useBreakpoint();`** which gives a space separated set of your queries matches
 
 **`<div className={`wrapper \${breakpoints}`}>`** where you attach those class names to your wrapper div.
+
+Now you can import the `Layout` component and add it to your app:
+
+```javascript
+/** App.js **/
+import Layout from "./components/Layout";
+
+function App() {
+  return (
+    <Fragment>
+      <BreakpointState queries={queries}>
+        <Layout showBreakpoints></Layout>
+      </BreakpointState>
+    </Fragment>
+  );
+}
+```
+
+you can see this behavior if you run your project and check the console.
+
+![Breakpoints reactive updates](https://i.imgur.com/67CWQl6.gif)
 
 <!-- ROADMAP -->
 
