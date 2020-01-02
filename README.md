@@ -398,6 +398,7 @@ Project Link: [https://github.com/adyngom/react-responsive-starter](https://gith
 - Super thanks to **[@Udit Tyagi](https://twitter.com/tyagiUdit94)** with this **[article](https://medium.com/better-programming/how-to-use-media-queries-programmatically-in-react-4d6562c3bc97)** that inspired everything
 - A must read article by **David Gilbertson** - **[The 100% correct way to do CSS breakpoints](https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/)** that impacted the default set of breakpoints names in the examples. You can of course name them whatever you see fit but read his article first.
 - Thanks to **Design Shack** for this very entertaining piece **[12 Fun CSS Text Shadows You Can Copy and Paste](https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/)**
+- **[Best Readme Template](https://github.com/othneildrew/Best-README-Template)** for a superb documentation starter 
 - Last but not least **[Sagan Ipsum](http://saganipsum.com/)** for a different take on sample text.
 
 <!-- MARKDOWN LINKS & IMAGES -->
